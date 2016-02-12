@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Global Kinetic</title>
+	
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/spinkit/css/spinners/7-three-bounce.css">
+	<link rel="stylesheet" href="dist/css/main.min.css">	
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body id="mainBody">
+	<div id="mainContainer" class="container-fluid">
+		<div id="forecast">
+
+			<div><img id="logo" class="img-responsive" src="dist/images/logo.png"></div>
+			<div id="weatherContainer">
+				<div class="weather-wrapper hide">	
+					
+					<p><strong>Place</strong>
+					<br /><span class="weather-place"></span></p>
+					
+					<p><strong>Temperature</strong>
+					<br /><span class="weather-temperature"></span> (<span class="weather-min-temperature"></span> - <span class="weather-max-temperature"></span>)</p>
+					
+					<p><strong>Description</strong>
+					<br /><div><span class="weather-description capitalize"></span><img src="" alt="" class="weather-icon"></div></p>
+					
+					<p><strong>Humidity</strong>
+					<br /><span class="weather-humidity"></span></p>
+					
+					<p><strong>Wind speed</strong>
+					<br /><span class="weather-wind-speed"></span></p>
+					
+					<p><strong>Sunrise</strong>
+					<br /><span class="weather-sunrise"></span></p>
+					
+					<p><strong>Sunset</strong>
+					<br /><span class="weather-sunset"></span></p>
+
+					<div id="refreshBtn" class="btn btn-info">REFRESH</div>
+				
+				</div>				
+			</div>
+		</div>
+
+		<div class="sk-three-bounce">
+			<div class="sk-child sk-bounce1"></div>
+			<div class="sk-child sk-bounce2"></div>
+			<div class="sk-child sk-bounce3"></div>
+		</div>
+	</div>
+	<script src="dist/js/main.min.js"></script>
+</body>
+</html>
